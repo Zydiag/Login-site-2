@@ -1,22 +1,19 @@
 body{
-    border: 2px solid #6C4AB6;
+    border: 2px solid blue;
     background-color: white;
     border-radius: 10px;
     margin: 100px auto;
     width: 50%;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     font-family: sans-serif;
 }
 .left-container{
-    width: 30%;
-    /* margin: 10px; */
+    width: 35%;
     padding: 20px;
     padding-top: 10px;
-    /* border: solid green; */
-    background-color: #8D72E1;
+    background-color: blue;
     color: white;
-    /* border-width: 0px 1px 0px 0px; */
     border-radius: 10px;
 }
 .main-heading{
@@ -27,12 +24,13 @@ body{
     position: absolute;
     display: block;
     margin-top: 10px;
+    margin-right: 0px;
     right: 5%;
 }
-/* p{
-    padding: 5px;
-    padding-left: 0px;
-} */
+.heading{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
 form{
     margin: 2%; 
 }
@@ -46,26 +44,74 @@ input[type="email"]{
     padding: 10px;
     width: 100%;
     margin: 5px 0px;
-    border: 1px solid rgba(5, 5, 5, 0.473);
-    height: 20px;
+    border: 1px solid blue;
+    height: 40px;
     border-radius: 5px;
     font-size: medium;
+    box-sizing: border-box;
+}
+.looking{
+    margin: 100px;
+    /* position: relative; */
+}
+
+.choose{
+    position: relative;
+}
+.projects{
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid blue ;
+    width: 49%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 7px;
+}
+.designs{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid blue ;
+    width: 49%;
+    margin-top: 10px;
+
+    border-radius: 5px;
+    padding: 7px;
+
+}
+.text{
+    line-height: 35px;
+}
+.projects:hover, .designs:hover{
+    background-color: #abb7f848;
+    color: blue;
+    border: 1px solid blue;
 }
 input:hover{
-    background-color: #a18edaa6;
-    color: white;
+    background-color: #abb7f848;
     
 }
-input::selection{
-    background-color: #8e72e170;
-    color: white;
+input[type="email"]:focus,
+input[type="password"]:focus{
+    background-color: #abb7f848;
+    border: 1px solid blue;
+}
+input[type="email"]:hover,
+input[type="password"]:hover{
+    border: 1px solid blue;
 }
 select{
     width: 100%;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 5px;
 }
 .inside-container{
     margin-top: 50px;
-    background-color: #6C4AB6;
+    background-color: #0000d6;
     padding: 15px;
     border-radius: 10px;
     font-size: small;
@@ -77,6 +123,20 @@ img{
     padding-right: 10px;
     margin-top: 10px auto;
 }
-h4,h3{
-    margin: 0px;
+h4{
+    margin-top: 0px;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.btn{
+    margin-top: 25px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    padding:15px 10px;
+    width: 40%;
 }
